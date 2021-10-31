@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="popup.css">
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.18.2"></script>
+    <style media="screen">
+        /* Add space between Vega-Embed links  */
+        .vega-actions a {
+            margin-right: 5px;
+        }
+    </style>
+    <script type="module" src="popup.js"></script>
+</head>
+<body>
+<button id="update">Update</button>
+<h2>APR
+    <div id="apr"></div>
+</h2>
+<h2>BEETS
+    <div id="beetsPrice"></div>
+</h2>
+<h2>TVL
+    <div id="tvl"></div>
+</h2>
+<label for="initialInvestment">Initial Investment</label>
+<input type="text" id="initialInvestment" value="10000">
+<label for="tvlChange">TVL Monthly Change</label>
+<input type="text" id="tvlChange" value=".5">
+<label for="beetsChange">BEETS Monthly Change</label>
+<input type="text" id="beetsChange" value=".95">
+<button id="calculate">Calculate</button>
+<h3>Snapshots</h3>
+<div id="vis"></div>
+</body>
+</html>
